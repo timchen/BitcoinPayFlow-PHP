@@ -19,7 +19,7 @@ $secureString = 'amount=' . $_POST['amount'] . 'bitcoin_address=' . $_POST['bitc
                 . $_POST['order_status'] . 'transaction_fee=' . $_POST['transaction_fee']
                 . 'transaction_timestamp=' . $_POST['transaction_timestamp'];
 
-$secureString = hash('sha256','adb9a539c2a3f29a39222f733d70d80f' . $secureString);
+$secureString = hash('sha256','Your API Key' . $secureString);
 
 if ($secureString == $_POST['signature']){
     
