@@ -8,7 +8,7 @@ $orders = $payflow->orders(array(
    'foreign_order_id' => '1234',
    'total_amount'     => '23.223',
    'custom_field'     => 'foobar',
-   'auth_token'       => 'adb9a539c2a3f29a39222f733d70d80f'  
+   'auth_token'       => 'your API key'  
 ));
 
 pre_print($orders);
